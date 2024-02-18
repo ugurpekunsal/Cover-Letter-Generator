@@ -1,0 +1,11 @@
+QMainWindow {
+	max-height: max-content;
+	max-width: 600px;
+	min-width: 600px;
+}
+QFrame {
+	margin: 10px 10px 0px;
+}
+QProgressBar {
+	margin-right: 0px;
+}
