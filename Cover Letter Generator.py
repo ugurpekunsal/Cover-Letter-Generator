@@ -98,6 +98,7 @@ class CoverLetterGenerator(BaseWidget):
         self._statusMessage.value = "Generated succesfully!"
 
 def textActionHandler(self, source, value):
+    self._statusMessage.value = ""
     if (len(value) == 0):
         self._progress.__sub__(33)
         self._flags[source] = False
@@ -108,6 +109,7 @@ def textActionHandler(self, source, value):
     self._flags[source] = True
 
 def portalActionHandler(self, source):
+    self._statusMessage.value = ""
     if (self._flags['portal'] == True):
         return
     checkBoxes = {'canadaJobBank': self._canadaJobBank, 'indeed': self._indeed, 'linkedin': self._linkedin, 'ziprecruiter': self._ziprecruiter}
@@ -139,6 +141,7 @@ def generateCoverLetter(companyName, positionName, jobPortalName):
         x = x.replace("jobPortalName", jobPortalName)
         pdf.multi_cell(0, 8, txt = x)
         pdf.cell(0, 4, ln = 1)
-    pdf.output("Ugur (Ian) Pekunsal - Cover Letter.pdf")
+    pdf.output("C:/Users/ugurp/Downloads/Ugur (Ian) Pekunsal - Cover Letter.pdf")
 
 if __name__ == "__main__":   pyforms.start_app( CoverLetterGenerator )
+    
