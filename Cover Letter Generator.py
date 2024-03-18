@@ -1,18 +1,18 @@
-import win32gui
-import win32.lib.win32con as win32con
+# import win32gui
+# import win32.lib.win32con as win32con
 
-from pyforms.utils.settings_manager import conf;
+from confapp import conf;
 import settings
 conf+=settings
 
 import pyforms
-from   pyforms          import BaseWidget
-from   pyforms.controls import *
+from pyforms.basewidget import BaseWidget
+from pyforms.controls   import *
 
 from fpdf import FPDF
 
-the_program_to_hide = win32gui.GetForegroundWindow()
-win32gui.ShowWindow(the_program_to_hide , win32con.SW_HIDE)
+# the_program_to_hide = win32gui.GetForegroundWindow()
+# win32gui.ShowWindow(the_program_to_hide , win32con.SW_HIDE)
 
 class CoverLetterGenerator(BaseWidget):
 
