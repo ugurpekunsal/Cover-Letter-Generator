@@ -16,3 +16,7 @@ Attention: There are no automatic lowercase or uppercase functions being run so 
 Good luck with your job applications!
 Last Update: March 17th 2024.
 Author: Ian
+
+Planned:
+
+1. Have different templates of cover letters, e.g. for career.
