@@ -20,3 +20,4 @@ Author: Ian
 Planned:
 
 1. Have different templates of cover letters, e.g. for career.
+2. Every 2 years templates should be updated.
